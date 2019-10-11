@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DC141212"
+    android:onClick="btnConnexionClick"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txvTitre"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:fontFamily="@font/alegreya_sc_bold"
+        android:gravity="center"
+        android:text="@string/space_explorer"
+        android:textColor="#FFB157"
+        android:textSize="36sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/text"
+        android:layout_width="484dp"
+        android:layout_height="401dp"
+        android:rotation="90"
+        app:layout_constraintDimensionRatio="w,1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.328"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/txvNomUtilisateur"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="264dp"
+        android:fontFamily="@font/alegreya_sans_sc"
+        android:text="@string/txvNomUtilisateur"
+        android:textColor="#FFB157"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txvTitre" />
+
+    <TextView
+        android:id="@+id/txvMotDePasse"
+        android:layout_width="0dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/alegreya_sans_sc"
+        android:text="@string/txvMotDePasse"
+        android:textColor="#FFB157"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/txvNomUtilisateur"
+        app:layout_constraintTop_toBottomOf="@+id/txvNomUtilisateur" />
+
+    <EditText
+        android:id="@+id/edtNomUtilisateur"
+        android:layout_width="0dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/rouded_edit_text"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:paddingStart="10dp"
+        android:paddingTop="5dp"
+        android:paddingEnd="10dp"
+        android:paddingBottom="5dp"
+        android:textColor="#692809"
+        android:textColorLink="#834606"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txvNomUtilisateur"
+        app:layout_constraintEnd_toEndOf="@+id/txvTitre"
+        app:layout_constraintStart_toEndOf="@+id/txvNomUtilisateur" />
+
+    <EditText
+        android:id="@+id/edtMotDePasse"
+        android:layout_width="0dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/rouded_edit_text"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:paddingStart="10dp"
+        android:paddingTop="5dp"
+        android:paddingEnd="10dp"
+        android:paddingBottom="5dp"
+        android:text="@string/edtMotDePasse"
+        android:textColorLink="#692809"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txvMotDePasse"
+        app:layout_constraintEnd_toEndOf="@+id/edtNomUtilisateur"
+        app:layout_constraintStart_toEndOf="@+id/txvMotDePasse" />
+
+    <Button
+        android:id="@+id/btnConnexion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rouded_button"
+        android:fontFamily="@font/alegreya_sans_sc"
+        android:onClick="btnConnexionClick"
+        android:paddingStart="20dp"
+        android:paddingTop="10dp"
+        android:paddingEnd="20dp"
+        android:paddingBottom="10dp"
+        android:text="@string/btnConnexion"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txvMotDePasse"
+        app:layout_constraintVertical_bias="0.18" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
